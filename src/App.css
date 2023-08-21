@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+/* Add these styles to your App.css file */
+
+/* Define a fixed height for the log container */
+.log {
+  height: 300px; /* Set your desired fixed height */
+  overflow: auto; /* Enable scrolling if content overflows */
+}
+
+/* Style for each log entry */
+.log-entry {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
