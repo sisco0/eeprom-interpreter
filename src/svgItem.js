@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SvgItem = ({ cellContent, phCellMapping, phCellUsage }) => {
+const SvgItem = ({ maxRow, cellContent, phCellMapping, phCellUsage }) => {
 
   return (
     <svg width="100%" height={`${(maxRow*70).toString(10)}px`}>

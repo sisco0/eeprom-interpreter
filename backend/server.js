@@ -3,6 +3,7 @@ const rateLimit = require('express-rate-limit');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+import dompurify from 'dompurify';
 
 const app = express();
 
@@ -48,8 +49,8 @@ app.post('/api/store', async (req, res) => {
   try {
     debugger;
     const newData = new Data({
-      nickname,
-      currentDate,
+      DOMPurify.sanitize(nickname),
+      DOMPurify.sanitize(currentDate),
       cellContent,
       phCellUsage,
       phCellMapping,
